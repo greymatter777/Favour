@@ -1,0 +1,107 @@
+/* ========================================
+   Hero Component Styles
+   ======================================== */
+
+.hero {
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    margin: 0 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(45deg, transparent 48%, rgba(212, 165, 116, 0.1) 49%, rgba(212, 165, 116, 0.1) 51%, transparent 52%),
+        linear-gradient(-45deg, transparent 48%, rgba(212, 165, 116, 0.1) 49%, rgba(212, 165, 116, 0.1) 51%, transparent 52%);
+    background-size: 30px 30px;
+    opacity: 0.3;
+    animation: patternMove 20s linear infinite;
+}
+
+.hero-content {
+    text-align: center;
+    color: var(--white);
+    z-index: 2;
+    animation: slideUp 1s ease-out 0.3s both;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--dark);
+    padding: 15px 50px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: var(--transition);
+    border: 2px solid var(--gold);
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background: transparent;
+    color: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(212, 165, 116, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        height: 500px;
+        margin: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+}

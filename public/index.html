@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Favour Afro Hair-Cut - Salon de coiffure unisexe spécialisé dans tous types de cheveux à Bordeaux.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/components/header.css">
+    <link rel="stylesheet" href="/components/navigation.css">
+    <link rel="stylesheet" href="/components/hero.css">
+    <link rel="stylesheet" href="/components/services.css">
+    <link rel="stylesheet" href="/components/pricing.css">
+    <link rel="stylesheet" href="/components/testimonials.css">
+    <link rel="stylesheet" href="/components/contact.css">
+    <link rel="stylesheet" href="/components/footer.css">
+    
+    <title>Favour Afro Hair-Cut - Salon de Coiffure Bordeaux</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-logo">
+        <div class="brand-text">Salon de Coiffure</div>
+        <h1 class="logo-name">FAVOUR</h1>
+        <div class="logo-tagline">Afro Hair-Cut</div>
+        <svg class="scissors-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+            <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+            <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+        </svg>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Accueil</a>
+        <a href="#about">À Propos</a>
+        <a href="#services">Services</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#avis">Avis</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/images/hero.jpg');">
+        <div class="hero-content">
+            <h1>Coiffure Afro</h1>
+            <p>Salon unisexe spécialisé dans tous types de cheveux</p>
+            <a href="tel:+33786986544" class="cta-button">Prendre Rendez-vous</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="about" id="about">
+        <h2 class="section-title">À Propos</h2>
+        <div class="section-divider"></div>
+        <p class="about-text">
+            Favour Afro Hair-Cut est un salon de coiffure unisexe premier choix pour les cheveux afro à Bordeaux.
+        </p>
+        <div class="services-grid" id="services">
+            <article class="service-card">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+                    <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+                </svg>
+                <h3>Coupe Homme</h3>
+                <p>Des coupes modernes et classiques adaptées à votre style.</p>
+            </article>
+            <article class="service-card">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                </svg>
+                <h3>Rasage</h3>
+                <p>Service de rasage professionnel.</p>
+            </article>
+            <article class="service-card">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                </svg>
+                <h3>Coiffure Femme</h3>
+                <p>Coupes et styles pour tous types de cheveux.</p>
+            </article>
+            <article class="service-card">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="11" r="3"/><path d="M12 21c3.5-1.5 7.5-5.5 7.5-10a7.5 7.5 0 1 0-15 0c0 4.5 4 8.5 7.5 10"/>
+                </svg>
+                <h3>Shampoing</h3>
+                <p>Soins capillaires professionnels.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="price-section" id="tarifs">
+        <div class="price-content">
+            <h2 class="section-title">Nos Tarifs</h2>
+            <div class="section-divider"></div>
+            <div class="price-grid">
+                <article class="price-item">
+                    <div class="price-details"><h3>Coupe Homme</h3><p>Coupe personnalisée</p></div>
+                    <div class="price-amount">20€</div>
+                </article>
+                <article class="price-item">
+                    <div class="price-details"><h3>Coupe Femme</h3><p>Coupe adaptée</p></div>
+                    <div class="price-amount">25€</div>
+                </article>
+                <article class="price-item">
+                    <div class="price-details"><h3>Coupe Enfant</h3><p>Coupe pour enfants</p></div>
+                    <div class="price-amount">15€</div>
+                </article>
+                <article class="price-item">
+                    <div class="price-details"><h3>Shampoing</h3><p>Lavage professionnel</p></div>
+                    <div class="price-amount">18€</div>
+                </article>
+                <article class="price-item">
+                    <div class="price-details"><h3>Taille de Barbe</h3><p>Entretien de barbe</p></div>
+                    <div class="price-amount">10€</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="avis">
+        <h2 class="section-title">Clients Satisfaits</h2>
+        <div class="section-divider"></div>
+        <article class="testimonial-container">
+            <p class="testimonial-quote">"Service de qualité exceptionnelle pour tous types de cheveux."</p>
+            <p class="testimonial-author">Adams Akolgo</p>
+            <div class="stars">★★★★★</div>
+            <div class="google-rating">4,6/5 sur Google</div>
+        </article>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contactez-nous</h2>
+        <div class="section-divider"></div>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <h3>Adresse</h3>
+                <p>21 Cours de la Marne<br>33800 Bordeaux</p>
+            </div>
+            <div class="contact-item">
+                <h3>Téléphone</h3>
+                <p><a href="tel:+33786986544">+33 7 86 98 65 44</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>Horaires</h3>
+                <p>Lundi - Dimanche<br>10:00 - 20:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer><p>© 2026 FAVOUR AFRO HAIR-CUT</p></footer>
+
+    <script type="module" src="/scripts/main.js"></script>
+</body>
+</html>

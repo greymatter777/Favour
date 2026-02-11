@@ -1,0 +1,49 @@
+{
+  "name": "favour-afro-haircut-landing",
+  "version": "1.0.0",
+  "description": "Landing page professionnelle pour Favour Afro Hair-Cut - Salon de coiffure à Bordeaux",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node scripts/build.js",
+    "serve": "http-server public -p 3000 -o",
+    "watch": "nodemon server.js",
+    "preview": "http-server public -p 8080",
+    "lint": "echo 'Linting...'",
+    "test": "echo 'No tests yet'",
+    "deploy": "npm run build && echo 'Ready for deployment'"
+  },
+  "keywords": [
+    "barbershop",
+    "landing-page",
+    "salon",
+    "coiffure",
+    "bordeaux",
+    "afro",
+    "haircut"
+  ],
+  "author": "Favour Afro Hair-Cut",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/votre-username/favour-afro-haircut-landing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/votre-username/favour-afro-haircut-landing/issues"
+  }
+}

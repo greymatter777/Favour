@@ -1,0 +1,125 @@
+/* ========================================
+   Pricing Component Styles
+   ======================================== */
+
+.price-section {
+    background: var(--dark);
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23222" width="1200" height="800"/></svg>');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 40px;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.price-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: var(--white);
+    transform: skewY(-2deg);
+}
+
+.price-section::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: var(--cream);
+    transform: skewY(-2deg);
+}
+
+.price-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.price-section .section-title {
+    color: var(--white);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.price-section .section-divider {
+    background: var(--gold);
+}
+
+.price-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 60px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.price-item.visible {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.price-item:hover {
+    padding-left: 20px;
+    border-bottom-color: var(--gold);
+}
+
+.price-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    color: var(--white);
+}
+
+.price-details p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+}
+
+.price-amount {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--gold);
+    font-weight: 700;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .price-section {
+        padding: 60px 20px;
+    }
+
+    .price-grid {
+        grid-template-columns: 1fr;
+    }
+}
