@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "build": "node scripts/build.js",
     "serve": "http-server public -p 3000 -o",
     "watch": "nodemon server.js",
     "preview": "http-server public -p 8080",
