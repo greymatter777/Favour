@@ -47,3 +47,4 @@ process.on('SIGTERM', () => {
     console.log('\n🛑 Arrêt du serveur...');
     process.exit(0);
 });
+module.exports = app;
