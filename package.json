@@ -10,8 +10,7 @@
     "watch": "nodemon server.js",
     "preview": "http-server public -p 8080",
     "lint": "echo 'Linting...'",
-    "test": "echo 'No tests yet'",
-    "deploy": "npm run build && echo 'Ready for deployment'"
+    "test": "echo 'No tests yet'"
   },
   "keywords": [
     "barbershop",
